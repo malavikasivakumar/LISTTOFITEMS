@@ -1,0 +1,30 @@
+#list {
+    font-family: Arial, sans-serif;
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    font-style: oblique;
+    padding: 24px;
+    
+  }
+  
+  .list-item {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  
+  .list-item:hover {
+    background-color: #e0e0e0;
+  }
+  .h1{
+    color: red;
+    font-size: 35px;
+    text-align: center;
+    font-style: oblique;
+    padding: 24px;
+}
+ 
