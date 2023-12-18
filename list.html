@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>FOOD LIST</title>
+</head>
+<body style="background-color:palevioletred;">
+  
+  <div id="list">
+    <h1>FOOD ITEMS IN MENU</h1>
+    
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function ()
+     {
+ 
+  const data = ["CHAPATHI", "DOSA", "CHICKEN", "BRIYANI", "NAAN-GRAVY","BBQ","PARATTA","PASTA","NOODLES","SOUP","NON-VEG MEALS","BEEF-CURRY","SAMBAR"];
+
+  const listContainer = document.getElementById("list");
+
+  
+  const ul = document.createElement("ul");
+
+ 
+  data.forEach(function (itemText) 
+  
+  {
+    const li = document.createElement("li");
+    li.className = "list-item";
+    li.textContent = itemText;
+
+    
+    li.addEventListener("click", function ()
+     {
+      alert("you have selected " + itemText + " enjoy your dish ");
+    });
+
+    
+    ul.appendChild(li);
+  });
+
+  
+  listContainer.appendChild(ul);
+});
+
+  </script>
+</body>
+</html>
